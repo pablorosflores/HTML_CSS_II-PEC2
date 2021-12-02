@@ -1,0 +1,65 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	PEC 1 - HTML i CSS II
+VERSION:	0.1
+-------------------------------------------------------------------*/
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+  * Import npm dependencies
+  * see: https://v2.parceljs.org/features/module-resolution/
+  * see commented examples below
+**/
+
+/**
+* ITCSS Model
+    Settings – variables, font, color definitions, etc.
+    Tools – global mixins and functions
+    Generic – high-level, normalizing styles
+    Elements – styling for bare HTML elements (no classes)
+    Objects – elements with classes that create patterns
+    Components – specific UI components
+    Utilities – helper classes and any overrides
+*/
+
+// Tools
+// This is where all the mixins and functions housed
+
+@import 'tools/tools';
+
+// Settings
+// This is where all the global and brand variables stored
+@import 'settings/settings';
+
+// Generic
+// Ground Zero styles like Normalize.css, global box-sizing rules, go here
+@import 'generic/generic';
+
+// Elements
+// Unclassed HTML elements (type selectors) go here
+@import 'elements/elements';
+
+// Objects
+// Cosmetic-free design patterns.
+// Objects can range from something as simple as a .wrapper element to layout systems.
+@import 'objects/objects';
+
+// Components
+// Designed components, chunks of UI, go here
+@import 'components/components';
+
+// This is the only place where !important declarations will be accepted.
+// This is the highest specificity layer includes the most explicit types of rules.
+//@import 'trumps/trumps';
+
+//BOOTSTRAP//
+
+//Bootstrap - Importing only necessary!!!
+//Place at the end if you don't want to overide!
+//see: uoc-boilerplate/node_modules/bootstrap/scss/bootstrap.scss
+
+@import 'bootstrap/scss/bootstrap.scss';

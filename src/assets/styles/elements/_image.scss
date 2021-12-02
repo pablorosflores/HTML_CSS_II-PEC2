@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  Elements > img
+\*------------------------------------*/
+
+/* img {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+} */
+
+.img-logo {
+  min-width: 50px;
+}
+
+.img-logo__small {
+  width: 5vw;
+  height: auto;
+  max-width: 100px;
+}
+
+.img-grid {
+  max-width: 300px;
+}
+
+.img-blog {
+  max-height: 20vh;
+}
+
+.img-front {
+  max-width: 500px;
+  height: auto;
+  opacity: 50%;
+  
+}
+
+//bg-img centered & top
+.bg-img__ct {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/actor-gfe02e4ae0_1920.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

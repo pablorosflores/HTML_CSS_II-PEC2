@@ -1,0 +1,82 @@
+// *----------------------------------*\
+//  Settings > Type
+// *----------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+$font-roboto: "Roboto";
+$font-playfair: "Playfair Display", sans-serif;
+$font-courier: "Courier", monospace;
+
+$font-size-large: 19px;
+$font-size-medium: 14px;
+$font-size-small: 12px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+p,
+.paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-playfair;
+  line-height: 1.2;
+}
+
+#bootstrap-override h1 {
+  font-size: 80px;
+  @include desktop {
+    font-size: 45px;
+  }
+
+  @include tablet {
+    font-size: 35px;
+  }
+}
+
+#bootstrap-override h2 {
+  font-size: 60px;
+  @include desktop {
+    font-size: 40px;
+  }
+  @include tablet {
+    font-size: 35px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 40px;
+  @include desktop {
+    font-size: 20px;
+  }
+  @include tablet {
+    font-size: 15px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 22px;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+}
