@@ -8,13 +8,14 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      '. . . . .'
-      'header header header header header'
-      'home-poster home-poster home-poster home-poster home-poster'
-      '. . contact-information . .'
-      '. logo-footer footer-links . .'
-      'footer-general footer-general footer-general footer-general footer-general';
+      ". . . . ."
+      "header header header header header"
+      "home-poster home-poster home-poster home-poster home-poster"
+      ". . contact-information . ."
+      ". logo-footer footer-links . ."
+      "footer-general footer-general footer-general footer-general footer-general";
     max-height: 100vh;
+    overflow: hidden;
   }
 
   .header {
@@ -28,11 +29,11 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      '. . . . .'
-      '. title1 . info info'
-      '. . title2 info info'
-      '. . . title3 .'
-      '. . . . .';
+      ". . . . ."
+      ". title1 . info info"
+      ". . title2 info info"
+      ". . . title3 ."
+      ". . . . .";
     grid-area: home-poster;
     min-height: 60vh;
   }
@@ -61,8 +62,8 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      'Information Information .'
-      'Information Information .';
+      "Information Information ."
+      "Information Information .";
     grid-area: info;
   }
 
