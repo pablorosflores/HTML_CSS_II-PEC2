@@ -1,3 +1,9 @@
+@supports not (display: grid) {
+  .home-grid {
+    display: block;
+  }
+}
+
 @supports (display: grid) {
   .home-grid {
     display: grid;
@@ -95,99 +101,3 @@
     grid-area: links-header;
   }
 }
-
-// EXAMPLE Grid layout for wide display
-/* @supports (display: grid) {
-  @media (min-width: 42em) and (min-height: 27em) {
-    main {
-      max-width: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 2fr minmax(10em, max-content) minmax(
-          14em,
-          max-content
-        ) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
-      grid-template-rows: 35vh 40vh 15vh 10vh;
-    }
-
-    h1 {
-      grid-column: 3 / 6;
-      grid-row: 1 / 2;
-      z-index: 2;
-      padding-left: 0.25em;
-      margin-bottom: initial;
-    }
-
-    h2 {
-      grid-row: 1 / -1;
-      grid-column: 6 / 7;
-      writing-mode: vertical-rl;
-      margin-bottom: initial;
-      color: $text;
-    }
-
-    hr {
-      grid-column: 5 / 6;
-      grid-row: 2;
-      height: 6px;
-      background-color: $text;
-      width: 20ch;
-    }
-
-    .about {
-      grid-column: 5 / 6;
-      grid-row: 2;
-      align-self: end;
-      padding-bottom: 4vh;
-      margin-bottom: initial;
-    }
-
-    a {
-      grid-column: 5 / 6;
-      justify-self: end;
-      align-self: center;
-      margin-bottom: initial;
-
-      &::before {
-        content: "";
-        display: block;
-        height: 4px;
-        background-color: $accent;
-        width: 4ch;
-        margin-bottom: 1em;
-      }
-    }
-
-    img {
-      grid-column: 1 / 4;
-      grid-row: 1 / 4;
-    }
-
-    .location {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      z-index: 2;
-      background: $main;
-      text-align: center;
-      display: flex;
-
-      p {
-        margin: auto;
-      }
-    }
-
-    button {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      position: initial;
-      padding: 0;
-    }
-  }
-
-  @media (min-width: 48em) and (min-height: 27em) {
-    hr {
-      opacity: 1;
-    }
-  }
-}
- */
