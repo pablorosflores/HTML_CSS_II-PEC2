@@ -30,9 +30,9 @@
         <link rel="icon" href="assets/images/logo.png" type="image/x-icon" />
 
         <!-- do not remove this line! -->
-        <title>The Orphan of Zhao - Characters</title>
+        <title>The Orphan of Zhao - Contact Us</title>
     </head>
-    <body>
+    <body class="overflow-x-hidden">
         <div>
             <header class="sticky-top header">
                 <nav class="navbar bg-dark navbar-expand-lg navbar-light">
@@ -54,15 +54,14 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Cast</a>
+                                <a class="nav-link" href="./characters.html">Cast</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="./blog.html">Blog</a>
+                                <a class="nav-link" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="./form.html">Contact Us</a>
+                                <a class="nav-link active" href="#">Contact Us</a>
                             </li>
-                        </ul>
                         </ul>
                     </div>
                     <div class="container d-md-none col-5 justify-content-center fs-5 ">
@@ -105,78 +104,43 @@
                     </div>                      
                 </nav>
             </header>
+            <div class="container py-4">
+                <div class="text-center">
+                    <h1>Contact Form</h1>
+                    <h2 class="text-primary">Get in touch with us:</h2>
+                </div>
+                <!-- Bootstrap 5 starter form -->
+                <form name="contact" method="POST" data-netlify="true">     
 
-            <article class="text-center">
-                <div id="bootstrap-override">
-                    <h1>Cast</h1>
-                </div>
-                <div class="ml-"></div>
-                <H3 class="text-primary mx-6">This adaptation of The Orphan of Zhao was written by James Fenton and directed by Gregory Doran. Discover the main actresses and actors.</H3>
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/woman-geda9f846c_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary">Susan Momoko</h3>
-                              <h4 class="text-primary"><b>as Princess' Maid</b></h4>
-                              <p>The  princess,  mother  of  the  orphan  of  Zhao,  didn’t  kill  herself  but 
-                                imprisoned and lost her mind</p>
-                            </div>
-                          </div> 
-                    </div>
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/man-g5baadec50_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary"><b>John Doe</b></h3>
-                              <h4 class="text-primary"><b>as Zhao Suo / Cheng Po</b></h4>
-                              <p> Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-                            </div>
-                          </div> 
-                    </div>
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/woman-gd119b3f7c_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary"><b>Hellen Walter</b></h3>
-                              <h4 class="text-primary"><b>as Tu’an Ku</b></h4>
-                              <p>A small river named Duden flows by their place and supplies it</p>
-                            </div>
-                          </div> 
-                    </div>
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/ranveer-singh-g39807a038_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary"><b>Edgar Bright</b></h3>
-                              <h4 class="text-primary"><b>as Han Jue</b></h4>
-                              <p>It is a paradisematic country, in which roasted parats of sentences fly into your mouth</p>
-                            </div>
-                          </div> 
-                    </div>
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/shahrukh-khan-gc8da4f307_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary"><b>Tom Squirrel</b></h3>
-                              <h4 class="text-primary"><b>as Gonsun Chujiu</b></h4>
-                              <p>Even the all-powerful Pointing has no control about the blind texts</p>
-                            </div>
-                          </div> 
-                    </div>
-                    <div class="flex-item">
-                        <div class="card img-thumbnail shadow p-3 mb-5 bg-body rounded">
-                            <img class="img-grid" src="./assets/images/actors/man-gfbf5d39ec_1280.png" alt="Avatar">
-                            <div class="container">
-                              <h3 class="text-primary"><b>Pablo Ros</b></h3>
-                              <h4 class="text-primary"><b>as Coud Tu Mach</b></h4>
-                              <p>One day however a small line of blind text by the name of Lorem Ipsum</p>
-                            </div>
-                          </div> 
-                    </div>                   
-                </div>
-            </article>
-            
+                  <!-- Name input -->
+                  <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" id="name" type="text" placeholder="Name" />
+                  </div>
+              
+                  <!-- Email address input -->
+                  <div class="mb-3">
+                    <label class="form-label" for="emailAddress">Email Address</label>
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                  </div>
+              
+                  <!-- Message input -->
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                  </div>
+              
+                  <!-- Form submit button -->
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  </div>
+                  <!-- The hidden input of netlify forms -->
+                  <input type="hidden" name="form-name" value="contact">
+              
+                </form>
+              
+              </div>
+           
 
             <!-- Footer -->
             <!-- Voy a hacer uso de otra parametrización como los p: padding, m: margin... -->
@@ -295,8 +259,9 @@
 
                 <!-- Footer -->
             </footer>
-
         </div>
         <script src='./assets/scripts/main.js' type="module"></script>
     </body>
 </html>
+
+
